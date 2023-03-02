@@ -17,8 +17,7 @@ const SubmitSchema = Yup.object().shape({
 
 export const FormikForm = ({ onSubmit }) => {
   return (
-    <div>
-      {/* <p>FormikForm</p> */}
+      <div>
       <Formik
         initialValues={{
           name: '',

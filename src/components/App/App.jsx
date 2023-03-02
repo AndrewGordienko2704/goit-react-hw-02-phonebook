@@ -10,8 +10,8 @@ import {
   ContactListBox,
 } from './App.styled';
 import { Filter } from 'components/Filter/Filter';
-import { ContactList } from 'components//ContactList/ContactList';
-import { Formik } from 'formik';
+import { ContactList } from 'components/ContactList/ContactList';
+import { FormikForm } from 'components/FormikForm/FormikForm';
 
 
 
@@ -60,7 +60,7 @@ class App extends Component {
         <Title>Phonebook</Title>
         <FormsWrapper>
           {/* <ContactForm onSubmit={this.addContact}></ContactForm> */}
-          <Formik onSubmit={this.addContact}></Formik>
+          <FormikForm onSubmit={this.addContact}></FormikForm>
         </FormsWrapper>
         <ContactsTitle>Contacts</ContactsTitle>
         {contacts.length ? (
